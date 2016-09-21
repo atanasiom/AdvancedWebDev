@@ -1,0 +1,12 @@
+main img {
+    padding-top: 10px;
+    width: 100%;
+}
+
+@media only all and (max-width: 1080px) {
+	
+    main img {
+        width: 100%;
+    }
+	
+}

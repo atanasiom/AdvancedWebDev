@@ -1,0 +1,210 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Segoe UI", Helvetica, sans-serif;
+    background: linear-gradient(#3B5323, PaleGreen);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+#body-wrapper {
+    padding: 10px;
+}
+
+span {
+    font-size: 1.25em;
+}
+
+header {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: url("../assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+nav {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    background: linear-gradient(#6b5425, #978766);
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+nav a {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    transition: 0.2s;
+    background-color: #6b5425;
+}
+
+nav a:visited {
+    color: inherit;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto; 
+    text-align: justify;
+    flex-grow: 1;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    color: #6b5425;
+    font-weight: bold;
+    flex-wrap: nowrap;
+}
+
+footer a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-information a {
+    margin: 0;
+}
+
+.information-piece {
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.information-piece img {
+    margin: 0 10px;
+}
+
+.dropdown-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.dropdown-menu:hover {
+    background-color: #6b5425;
+    transition: 0.2s;
+}
+
+.dropdown-menu:hover .dropdown-contents {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s;
+    background: linear-gradient(#6b5425, #978766);
+}
+
+.dropdown-contents a {
+    text-align: center;
+    transition: 0.2s;
+}
+
+.dropdown-contents a:hover {
+    transition: 0.2s;
+    background-color: #6b5425;
+}
+
+@media only all and (max-width: 1080px) {
+	
+	header {
+        width: 100%;
+        height: 50px;
+        background: url("../assets/logo-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+	}
+
+    body {
+        min-width: 350px;
+    }
+    
+	main {
+        min-width: 100%;
+	}
+
+    footer {
+        min-width: 100%;
+        height: 200px;
+        padding-bottom: 10px;
+    }
+
+    #footer-information {
+        flex-direction: column;
+    }
+    
+    .information-piece {
+        margin: 5px 0;
+    }
+	
+	nav {
+        width: 100%;
+        flex-direction: column;
+        height:100%;
+        background: none;
+        background-color: #79653a;
+	}
+	
+	nav a {
+        height: 40px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        border-bottom: solid 1px;
+        border-color: #6b5425;
+	}
+
+    .dropdown-menu:hover .dropdown-contents {
+        display: none;
+    }
+	
+}

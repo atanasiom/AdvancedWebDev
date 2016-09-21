@@ -1,0 +1,15 @@
+main {
+    text-align: left;
+}
+
+main img {
+    width: 25%;
+}
+
+@media only all and (max-width: 1080px) {
+	
+    main img {
+        width: 100%;
+    }
+	
+}

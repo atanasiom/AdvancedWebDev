@@ -1,0 +1,32 @@
+#body-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left {
+    padding-right: 5px;
+}
+
+iframe {
+    padding-left: 5px;
+    max-width: 100%;
+    width: 600px;
+}
+
+@media only all and (max-width: 1080px) {
+    
+    #body-wrapper {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    iframe {
+        padding: 0;
+    }
+
+    #left {
+        padding: 0;
+    }
+	
+}
